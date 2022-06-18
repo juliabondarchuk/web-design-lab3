@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body {
+         background-image: url(img/backgroung3.png);
+        }
+       </style>
+</head>
+<body>
+  <script>app.view.update();</script>
+    <header><nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Best Polls</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="poll.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="log-in.html">Log in</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <h1 class="text__header">Your profile</h1>
+            <div class="row align-items-center">
+                <div class="col">
+                  
+                    <table class="table table-striped">
+                        <tbody>
+                          <tr>
+                            <th scope="row">Name</th>
+                            <td><b id="name"></b>
+                              <span id="name"></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Email</th>
+                            <td><b id="email"></b>
+                              <span id="email"></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Man/Woman</th>
+                            <td><b id="m_w"></b>
+                              <span id="m_w"></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Date of birth</th>
+                            <td><b id="birth"></b>
+                              <span id="birth"></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Your answers:</th>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">The best season</th>
+                            <td><b id="ss"></b>
+                              <span id="ss"></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Cats or Dogs</th>
+                            <td><b id="cd"></b>
+                              <span id="cd"></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">The best ice cream taste</th>
+                            <td><b id="ic"></b>
+                              <span id="ic"></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">YOUR PERSONAL SCORE (out of 10)</th>
+                            <td><b id="score"></b>
+                              <span id="score"></span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col">
+                  <button id="kn_pr" class="btn btn-lg btn-primary btn-block" href="poll.html" style="margin-left:auto;margin-right:auto;width:250px;" onclick="app.view.update()">Get profile info</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <script src ="js/main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
